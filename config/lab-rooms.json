@@ -1,0 +1,8 @@
+{
+  "hydraulics-pneumatics": ["1304"],
+  "mechanical-drives": ["1408"],
+  "robotics": ["1402"],
+  "plc": ["1400", "1302"],
+  "ac-dc": ["1404"],
+  "amatrol-motor-control-systems": ["1404"]
+}

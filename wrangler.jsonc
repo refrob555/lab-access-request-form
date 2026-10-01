@@ -1,0 +1,48 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mec-lab-access",
+  "account_id": "YOUR_CLOUDFLARE_ACCOUNT_ID",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-09-30",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "redact_query_string": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true
+    }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "DECISIONS",
+      "id": "YOUR_KV_NAMESPACE_ID"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "DECISION_LOCK",
+        "class_name": "DecisionLock"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1-decision-lock",
+      "new_sqlite_classes": ["DecisionLock"]
+    }
+  ],
+  "vars": {
+    "STAFF_EMAIL": "coordinator@example.edu",
+    "PUBLIC_BASE_URL": "https://forms.trainlabhq.com/atcflexlabaccess",
+    "BASE_PATH": "/atcflexlabaccess"
+  }
+}

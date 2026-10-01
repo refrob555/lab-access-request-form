@@ -1,0 +1,17 @@
+# Copy to .dev.vars for local `npm run dev`. Never commit .dev.vars.
+# Mock mode does not send email. Inspect payloads at GET /dev/outbox
+# with header: Authorization: Bearer local-dev-only
+
+# Absolute links in email default to https://forms.trainlabhq.com/atcflexlabaccess
+# PUBLIC_BASE_URL=https://forms.trainlabhq.com/atcflexlabaccess
+# BASE_PATH=/atcflexlabaccess
+
+EMAIL_MODE=mock
+MOCK_TOKEN=local-dev-only
+STAFF_EMAIL=coordinator@example.com
+
+# Production uses `wrangler secret put` instead of this file.
+# EMAIL_MODE=gmail_smtp
+# EMAIL_FROM=Flexlab Use Request <noreply@trainlabhq.com>
+# GMAIL_APP_PASSWORD=
+# RECEIPT_SECRET=
