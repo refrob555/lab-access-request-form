@@ -1,0 +1,51 @@
+{
+  "editorNote": "Fall 2026 instructors with a public email. Robert M. Fricke is first; the rest are alphabetical by last name. Collin James Ruthe keeps the manufacturing coordinator role in the label. Michael Baum is omitted. People without a public email are omitted.",
+  "collegeName": "Rock Valley College",
+  "formTitle": "ATC Flex Labs access request",
+  "intro": "Request time in the ATC Flex Labs outside your scheduled class. The request must be arranged at least one business day ahead. Submitting this form does not grant access. Wait for confirmation, and check in at the ATC front desk before entering the lab.",
+  "timezone": "America/Chicago",
+  "maxDaysAhead": 120,
+  "maxDurationMinutes": 240,
+  "slotMinutes": 30,
+  "dayStart": "07:00",
+  "dayEnd": "21:00",
+  "allowedEmailDomains": [],
+  "classes": [
+    { "id": "MEC-103", "label": "MEC-103 Mechanical Systems" },
+    { "id": "MEC-113", "label": "MEC-113 Electrical Systems" },
+    { "id": "MEC-133", "label": "MEC-133 Robotics and Automation" },
+    { "id": "MEC-143", "label": "MEC-143 Advanced Manufacturing" },
+    { "id": "MEC-153", "label": "MEC-153 Fundamentals of PLC" },
+    { "id": "MEC-163", "label": "MEC-163 Applications of PLC" },
+    { "id": "MEC-173", "label": "MEC-173 Pneumatics and Hydraulics" },
+    { "id": "MEC-183", "label": "MEC-183 Industrial Robots" },
+    { "id": "MEC-193", "label": "MEC-193 Mechatronics Capstone" },
+    { "id": "EET-141", "label": "EET-141 DC/AC Circuits and Electronics I" },
+    { "id": "EET-239", "label": "EET-239 Programmable Logic Controllers" },
+    { "id": "EET-254", "label": "EET-254 Robotics and Automated Systems" },
+    { "id": "MET-110", "label": "MET-110 Manufacturing Processes I" },
+    { "id": "MET-133", "label": "MET-133 Graphics/SolidWorks CAD I" },
+    { "id": "WLD-100", "label": "WLD-100 Introduction to Welding" }
+  ],
+  "instructors": [
+    { "id": "robert-m-fricke", "label": "Robert M. Fricke" },
+    { "id": "thomas-clark", "label": "Thomas Clark" },
+    { "id": "hazem-diab", "label": "Hazem Diab" },
+    { "id": "shawn-patrick-doyle", "label": "Shawn Patrick Doyle" },
+    { "id": "joshua-p-gates", "label": "Joshua P. Gates" },
+    { "id": "lucas-greenlee", "label": "Lucas Greenlee" },
+    { "id": "jill-l-jennings", "label": "Jill L. Jennings" },
+    { "id": "collin-james-ruthe", "label": "Collin James Ruthe (Manufacturing Technology Coordinator)" },
+    { "id": "thomas-c-tammen", "label": "Thomas C. Tammen" },
+    { "id": "david-v-wedwick", "label": "David V. Wedwick" },
+    { "id": "norb-l-ziemer", "label": "Norb L. Ziemer" }
+  ],
+  "labs": [
+    { "id": "hydraulics-pneumatics", "label": "Hydraulics/Pneumatics", "supervision": "supervised" },
+    { "id": "amatrol-motor-control-systems", "label": "Amatrol Motor Control Systems", "supervision": "supervised" },
+    { "id": "mechanical-drives", "label": "Mechanical Drives", "supervision": "supervised" },
+    { "id": "robotics", "label": "Robotics", "supervision": "supervised" },
+    { "id": "ac-dc", "label": "AC/DC", "supervision": "open" },
+    { "id": "plc", "label": "PLC", "supervision": "open" }
+  ]
+}
